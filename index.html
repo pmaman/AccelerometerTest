@@ -89,16 +89,17 @@
               // To lower canvas resolution on mobile devices to gain some
               // performance, uncomment the following line:
               // config.devicePixelRatio = 1;
-              window.addEventListener("deviceorientation", function (event) {
-                  var alpha = event.alpha; //z axis rotation
-                  var beta = event.beta; // x axis rotation
-                  var gamma = event.gamma; // y axis rotation
 
-                  if (typeof unityInstance != 'undefined') {
-                      // Send these values to Unity, make sure unityInstance is initialized
-                      unityInstance.SendMessage("Cube", "ReceiveAccelerometerData", alpha + "," + beta + "," + gamma);
-                  }
-              }, false);
+              //window.addEventListener("deviceorientation", function (event) {
+              //    var alpha = event.alpha; //z axis rotation
+              //    var beta = event.beta; // x axis rotation
+              //    var gamma = event.gamma; // y axis rotation
+
+              //    if (typeof unityInstance != 'undefined') {
+              //        // Send these values to Unity, make sure unityInstance is initialized
+              //        unityInstance.SendMessage("Cube", "ReceiveAccelerometerData", alpha + "," + beta + "," + gamma);
+              //    }
+              //}, false);
 
           } else {
               // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
