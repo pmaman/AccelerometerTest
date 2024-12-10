@@ -87,7 +87,7 @@
 
                     // Send accelerometer data to Unity
                     unityInstance.SendMessage(
-                        "GameObjectName", // Ensure this matches the GameObject in Unity
+                        "CubeToRotate", // Ensure this matches the GameObject in Unity
                         "ReceiveAccelerometerData", // Ensure this matches the Unity script method
                         `${accX},${accY},${accZ}`
                     );
