@@ -12,14 +12,14 @@
     <div id="unity-container" class="unity-desktop">
         <canvas id="unity-canvas" width="960" height="600" tabindex="-1"></canvas>
         <div id="unity-loading-bar">
-            <div id="unity-logo"></div>
+            <!--<div id="unity-logo"></div>-->
             <div id="unity-progress-bar-empty">
                 <div id="unity-progress-bar-full"></div>
             </div>
         </div>
         <div id="unity-warning"></div>
         <div id="unity-footer">
-            <div id="unity-webgl-logo"></div>
+            <!--<div id="unity-webgl-logo"></div>-->
             <div id="unity-fullscreen-button"></div>
             <div id="unity-build-title">JavascriptIntegrationTest</div>
         </div>
@@ -91,6 +91,7 @@
                         "ReceiveAccelerometerData", // Ensure this matches the Unity script method
                         `${accX},${accY},${accZ}`
                     );
+                    console.log(`accel data: ${accX},${accY},${accZ}`);
                 });
             } else {
                 console.warn("DeviceMotionEvent is not supported on this device/browser.");
